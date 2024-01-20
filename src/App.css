@@ -1,0 +1,78 @@
+.App {
+  margin-left: 38%;
+  margin-top: 30px;
+}
+
+
+.App .Heading {
+  font-size: 1.5rem;
+  font-family: Arial, sans-serif;
+  color: royalblue;
+  padding-left: 110px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+body{
+  background-color: bisque;
+}
+
+.custom-dropdown
+{
+  padding: 20px;
+  max-width: 320px;
+  position: relative;
+}
+
+.custom-dropdown-selection{
+  background-color: aliceblue;
+  max-width: 320px;
+  border-radius : 6px;
+  padding: 10px 16px;
+  cursor: pointer;
+  position: relative;
+}
+
+.custom-dropdown-selection::after{
+  display: block;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  transform: rotate(45deg);
+  position: absolute;
+  right: 15px;
+  top: 12px;
+}
+
+.custom-dropdown-selection.visible::after{
+  top:18px;
+  transform: rotate(-135deg);
+}
+
+.custom-dropdown .item-holder{
+
+  border-radius: 6px;
+  background-color: aliceblue;
+  position: absolute;
+  top: 100%;
+  width: 320px;
+
+}
+
+.custom-dropdown .item-holder .dropdown-item {
+  padding: 10px 16px;
+  cursor: pointer;
+
+
+}
+
+.custom-dropdown .item-holder .dropdown-item:hover{
+background-color:lightgrey;
+  
+
+}
+
